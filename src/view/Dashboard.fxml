@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashboard" prefHeight="400.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardController">
+   <children>
+      <ImageView fx:id="imgGlobal" fitHeight="70.0" fitWidth="70.0" layoutX="48.0" layoutY="148.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/globe.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="imgHospital" fitHeight="70.0" fitWidth="70.0" layoutX="189.0" layoutY="151.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/hospital.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgQuarantineCenter" fitHeight="70.0" fitWidth="70.0" layoutX="337.0" layoutY="147.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/clinic.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgUser" fitHeight="70.0" fitWidth="70.0" layoutX="485.0" layoutY="148.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/user_group.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblMenu" alignment="CENTER" contentDisplay="CENTER" layoutY="286.0" prefHeight="35.0" prefWidth="600.0" text="Welcome" textFill="#d71c16">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescription" alignment="CENTER" contentDisplay="CENTER" layoutY="333.0" prefHeight="25.0" prefWidth="607.0" text="Please select one of above main operations to proceed" textFill="#0f42da">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="366.0" prefHeight="21.0" prefWidth="609.0" text="Copyright 2020 IJSE - DEP 5 Version" />
+      <Label textFill="#0bc2eb" />
+      <Label layoutX="48.0" layoutY="56.0" />
+      <Label layoutX="7.0" layoutY="235.0" prefHeight="21.0" prefWidth="594.0" style="-fx-background-color: black;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="163.0" layoutY="54.0" prefHeight="26.0" prefWidth="249.0" text="COVID-19 Surveillance System">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="7.0" layoutY="111.0" prefHeight="21.0" prefWidth="594.0" style="-fx-background-color: black;" />
+      <Label layoutX="145.0" layoutY="126.0" prefHeight="128.0" prefWidth="15.0" style="-fx-background-color: black;" />
+      <Label layoutX="7.0" layoutY="124.0" prefHeight="128.0" prefWidth="15.0" style="-fx-background-color: black;" />
+      <Label layoutX="292.0" layoutY="119.0" prefHeight="128.0" prefWidth="15.0" style="-fx-background-color: black;" />
+      <Label layoutX="586.0" layoutY="113.0" prefHeight="141.0" prefWidth="15.0" style="-fx-background-color: black;" />
+      <Label layoutX="441.0" layoutY="117.0" prefHeight="134.0" prefWidth="15.0" style="-fx-background-color: black;" />
+      <Label layoutX="136.0" layoutY="127.0" prefHeight="119.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="26.0" layoutY="128.0" prefHeight="119.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="164.0" layoutY="115.0" prefHeight="134.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="577.0" layoutY="120.0" prefHeight="128.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="461.0" layoutY="122.0" prefHeight="128.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="432.0" layoutY="115.0" prefHeight="128.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="311.0" layoutY="120.0" prefHeight="134.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="283.0" layoutY="121.0" prefHeight="128.0" prefWidth="5.0" style="-fx-background-color: black;" />
+      <Label layoutX="146.0" layoutY="104.0" prefHeight="134.0" prefWidth="5.0" style="-fx-background-color: whblackite;" />
+      <ImageView fitHeight="44.0" fitWidth="60.0" layoutX="404.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/virus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="50.0" layoutX="151.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/sri_lanka.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" prefHeight="44.0" prefWidth="600.0" text="Sri Lanka Govrernment" textFill="#055cbf">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

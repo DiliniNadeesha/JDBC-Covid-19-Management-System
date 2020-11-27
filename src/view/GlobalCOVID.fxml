@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="403.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GlobalCOVIDController">
+   <children>
+      <JFXButton fx:id="btnHome" layoutX="16.0" layoutY="15.0" onAction="#btnHome_OnAction" prefHeight="45.0" prefWidth="115.0" style="-fx-background-color: lightgray;" text="Home" />
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="18.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="228.0" layoutY="20.0" prefHeight="36.0" prefWidth="208.0" text="Global COVID-19">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="20.0" layoutY="86.0" prefHeight="35.0" prefWidth="145.0" text="Last Updated">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="190.0" layoutY="86.0" prefHeight="35.0" prefWidth="160.0" text="Confirmed Cases">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="363.0" layoutY="86.0" prefHeight="35.0" prefWidth="145.0" text="Recoverd">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="518.0" layoutY="86.0" prefHeight="35.0" prefWidth="145.0" text="Deaths">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="25.0" layoutY="134.0" prefHeight="36.0" prefWidth="136.0" text="2020-05-05">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblConfirmed" alignment="CENTER" layoutX="198.0" layoutY="134.0" prefHeight="36.0" prefWidth="145.0" text="3,584,174" textFill="#1b0bc9">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblRecoverd" alignment="CENTER" layoutX="363.0" layoutY="134.0" prefHeight="36.0" prefWidth="145.0" text="1,167,991" textFill="#0bae0d">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDeaths" alignment="CENTER" layoutX="529.0" layoutY="134.0" prefHeight="36.0" prefWidth="145.0" text="251,580" textFill="#e42510">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="dtpDate" layoutX="20.0" layoutY="199.0" prefHeight="28.0" prefWidth="250.0" promptText="Date" />
+      <JFXTextField fx:id="txtConfirmed" layoutX="20.0" layoutY="248.0" prefHeight="28.0" prefWidth="250.0" promptText="Confirmed Cases" text="3,584,174" />
+      <JFXTextField fx:id="txtRecoverd" layoutX="20.0" layoutY="300.0" prefHeight="28.0" prefWidth="250.0" promptText="Recovered" text="1,167,991" />
+      <JFXTextField fx:id="txtDeaths" layoutX="20.0" layoutY="351.0" prefHeight="28.0" prefWidth="250.0" promptText="Deaths" text="251,580" />
+      <Label alignment="CENTER" layoutX="294.0" layoutY="249.0" prefHeight="28.0" prefWidth="262.0" text="Enter the number of confirmed cases" textFill="#121222">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="294.0" layoutY="301.0" prefHeight="28.0" prefWidth="262.0" text="Enter the number of recoverd cases" textFill="#2e2f2d">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="294.0" layoutY="352.0" prefHeight="28.0" prefWidth="262.0" text="Enter the number of deaths" textFill="#111010">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnUpdate" layoutX="573.0" layoutY="330.0" onAction="#btnUpdate_OnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: lightgray;" />
+      <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="573.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/approve_and_update.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="180.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/globe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="436.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/virus.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnReset" layoutX="573.0" layoutY="240.0" onAction="#btnReset_OnAction" prefHeight="45.0" prefWidth="100.0" style="-fx-background-color: lightgray;" text="Reset" />
+      <ImageView fitHeight="30.0" fitWidth="25.0" layoutX="574.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/reset.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

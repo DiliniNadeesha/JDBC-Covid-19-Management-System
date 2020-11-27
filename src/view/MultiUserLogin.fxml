@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="378.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MultiUserLoginController">
+   <children>
+      <Label alignment="CENTER" prefHeight="45.0" prefWidth="600.0" text="Sri Lanka Govrernment" textFill="#0654c9">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="155.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/sri_lanka.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="404.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/virus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="154.0" layoutY="56.0" text="COVID-19 Surveillance System Login">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUsername" layoutX="130.0" layoutY="137.0" prefHeight="40.0" prefWidth="377.0" />
+      <JFXPasswordField fx:id="txtPassword" layoutX="130.0" layoutY="207.0" prefHeight="40.0" prefWidth="377.0" />
+      <JFXButton fx:id="btnLogin" layoutX="246.0" layoutY="312.0" onAction="#btnLogin_OnAction" prefHeight="45.0" prefWidth="109.0" style="-fx-background-color: lightgray;" text="Login" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="85.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/user_group.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="85.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/login%20password.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="246.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assert/login%20rounded.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="41.0" layoutY="105.0" prefHeight="21.0" prefWidth="520.0" style="-fx-background-color: black;" />
+      <Label layoutX="40.0" layoutY="270.0" prefHeight="21.0" prefWidth="520.0" style="-fx-background-color: black;" />
+      <Label layoutX="40.0" layoutY="106.0" prefHeight="183.0" prefWidth="21.0" style="-fx-background-color: black;" />
+      <Label layoutX="540.0" layoutY="106.0" prefHeight="183.0" prefWidth="21.0" style="-fx-background-color: black;" />
+      <Label layoutX="48.0" layoutY="108.0" prefHeight="180.0" prefWidth="5.0" style="-fx-background-color: white;" />
+      <Label layoutX="548.0" layoutY="108.0" prefHeight="180.0" prefWidth="5.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
